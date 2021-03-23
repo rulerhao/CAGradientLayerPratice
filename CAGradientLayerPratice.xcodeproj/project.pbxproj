@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A50AD041B73EB99893A41C9 /* Pods_CAGradientLayerPratice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B386C6500BBC2EAA3C58B7 /* Pods_CAGradientLayerPratice.framework */; };
+		633F6DC1260978E800BA7FE0 /* TitleBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DC0260978E800BA7FE0 /* TitleBarViewController.m */; };
+		633F6DC52609791700BA7FE0 /* TitleBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DC42609791700BA7FE0 /* TitleBarModel.m */; };
+		633F6DC9260979D300BA7FE0 /* TitleBarViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DC8260979D300BA7FE0 /* TitleBarViewSetting.m */; };
 		637CF1F8260438BB005F0254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF1F7260438BB005F0254 /* AppDelegate.m */; };
 		637CF1FB260438BB005F0254 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF1FA260438BB005F0254 /* SceneDelegate.m */; };
 		637CF1FE260438BB005F0254 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF1FD260438BB005F0254 /* ViewController.m */; };
@@ -14,9 +18,42 @@
 		637CF203260438BD005F0254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637CF202260438BD005F0254 /* Assets.xcassets */; };
 		637CF206260438BD005F0254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637CF204260438BD005F0254 /* LaunchScreen.storyboard */; };
 		637CF209260438BD005F0254 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF208260438BD005F0254 /* main.m */; };
+		637CF224260445BC005F0254 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = 637CF212260445BC005F0254 /* Thumbs.db */; };
+		637CF225260445BC005F0254 /* MUL OUcare_14 16-person base.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF213260445BC005F0254 /* MUL OUcare_14 16-person base.png */; };
+		637CF226260445BC005F0254 /* MUL OUcare_09 1-person base.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF214260445BC005F0254 /* MUL OUcare_09 1-person base.png */; };
+		637CF227260445BC005F0254 /* MUL OUcare_13 button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF215260445BC005F0254 /* MUL OUcare_13 button3.png */; };
+		637CF228260445BC005F0254 /* MUL OUcare_12 caution.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF216260445BC005F0254 /* MUL OUcare_12 caution.png */; };
+		637CF229260445BC005F0254 /* MUL OUcare_03 button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF217260445BC005F0254 /* MUL OUcare_03 button2.png */; };
+		637CF22A260445BC005F0254 /* MUL OUcare_10 4-name base.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF218260445BC005F0254 /* MUL OUcare_10 4-name base.png */; };
+		637CF22B260445BC005F0254 /* MUL OUcare_01 主頁.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF219260445BC005F0254 /* MUL OUcare_01 主頁.png */; };
+		637CF22C260445BC005F0254 /* MUL OUcare_08 battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF21A260445BC005F0254 /* MUL OUcare_08 battery.png */; };
+		637CF22D260445BC005F0254 /* MUL OUcare_02 button.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF21B260445BC005F0254 /* MUL OUcare_02 button.png */; };
+		637CF22E260445BC005F0254 /* MUL OUcare_04 login paint.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF21C260445BC005F0254 /* MUL OUcare_04 login paint.png */; };
+		637CF22F260445BC005F0254 /* MUL OUcare_07 green.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF21D260445BC005F0254 /* MUL OUcare_07 green.png */; };
+		637CF230260445BC005F0254 /* MUL OUcare_06 1-name base.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF21E260445BC005F0254 /* MUL OUcare_06 1-name base.png */; };
+		637CF231260445BC005F0254 /* 漸層色標示.pptx in Resources */ = {isa = PBXBuildFile; fileRef = 637CF21F260445BC005F0254 /* 漸層色標示.pptx */; };
+		637CF232260445BC005F0254 /* 漸層色標示.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 637CF220260445BC005F0254 /* 漸層色標示.pdf */; };
+		637CF233260445BC005F0254 /* MUL OUcare_05 OUcare logo 50%.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF221260445BC005F0254 /* MUL OUcare_05 OUcare logo 50%.png */; };
+		637CF234260445BC005F0254 /* MUL OUcare_11 4-person base.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF222260445BC005F0254 /* MUL OUcare_11 4-person base.png */; };
+		637CF23A260448F2005F0254 /* LogInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF239260448F2005F0254 /* LogInView.m */; };
+		637CF245260453AE005F0254 /* LoginViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF244260453AE005F0254 /* LoginViewSetting.m */; };
+		637CF24D26049507005F0254 /* MUL OUcare-15 形象頁up.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF24B26049507005F0254 /* MUL OUcare-15 形象頁up.png */; };
+		637CF24E26049507005F0254 /* MUL OUcare-16 形象頁down.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF24C26049507005F0254 /* MUL OUcare-16 形象頁down.png */; };
+		6387352826084D3E00CC643C /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387352726084D3E00CC643C /* LoadingView.m */; };
+		6387352C26084D5300CC643C /* LoadingViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387352B26084D5300CC643C /* LoadingViewSetting.m */; };
+		638735372608A37000CC643C /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638735362608A37000CC643C /* BackgroundView.m */; };
+		6387353C2608A45E00CC643C /* BackgroundViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387353B2608A45E00CC643C /* BackgroundViewSetting.m */; };
+		638735402608A71D00CC643C /* SensorLargeSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387353F2608A71D00CC643C /* SensorLargeSizeView.m */; };
+		638735452608A76400CC643C /* TitleBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638735442608A76400CC643C /* TitleBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		633F6DBF260978E800BA7FE0 /* TitleBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleBarViewController.h; sourceTree = "<group>"; };
+		633F6DC0260978E800BA7FE0 /* TitleBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleBarViewController.m; sourceTree = "<group>"; };
+		633F6DC32609791700BA7FE0 /* TitleBarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleBarModel.h; sourceTree = "<group>"; };
+		633F6DC42609791700BA7FE0 /* TitleBarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleBarModel.m; sourceTree = "<group>"; };
+		633F6DC7260979D300BA7FE0 /* TitleBarViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleBarViewSetting.h; sourceTree = "<group>"; };
+		633F6DC8260979D300BA7FE0 /* TitleBarViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleBarViewSetting.m; sourceTree = "<group>"; };
 		637CF1F3260438BB005F0254 /* CAGradientLayerPratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAGradientLayerPratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		637CF1F6260438BB005F0254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		637CF1F7260438BB005F0254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +66,44 @@
 		637CF205260438BD005F0254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		637CF207260438BD005F0254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637CF208260438BD005F0254 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		637CF212260445BC005F0254 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		637CF213260445BC005F0254 /* MUL OUcare_14 16-person base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_14 16-person base.png"; sourceTree = "<group>"; };
+		637CF214260445BC005F0254 /* MUL OUcare_09 1-person base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_09 1-person base.png"; sourceTree = "<group>"; };
+		637CF215260445BC005F0254 /* MUL OUcare_13 button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_13 button3.png"; sourceTree = "<group>"; };
+		637CF216260445BC005F0254 /* MUL OUcare_12 caution.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_12 caution.png"; sourceTree = "<group>"; };
+		637CF217260445BC005F0254 /* MUL OUcare_03 button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_03 button2.png"; sourceTree = "<group>"; };
+		637CF218260445BC005F0254 /* MUL OUcare_10 4-name base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_10 4-name base.png"; sourceTree = "<group>"; };
+		637CF219260445BC005F0254 /* MUL OUcare_01 主頁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_01 主頁.png"; sourceTree = "<group>"; };
+		637CF21A260445BC005F0254 /* MUL OUcare_08 battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_08 battery.png"; sourceTree = "<group>"; };
+		637CF21B260445BC005F0254 /* MUL OUcare_02 button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_02 button.png"; sourceTree = "<group>"; };
+		637CF21C260445BC005F0254 /* MUL OUcare_04 login paint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_04 login paint.png"; sourceTree = "<group>"; };
+		637CF21D260445BC005F0254 /* MUL OUcare_07 green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_07 green.png"; sourceTree = "<group>"; };
+		637CF21E260445BC005F0254 /* MUL OUcare_06 1-name base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_06 1-name base.png"; sourceTree = "<group>"; };
+		637CF21F260445BC005F0254 /* 漸層色標示.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "漸層色標示.pptx"; sourceTree = "<group>"; };
+		637CF220260445BC005F0254 /* 漸層色標示.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "漸層色標示.pdf"; sourceTree = "<group>"; };
+		637CF221260445BC005F0254 /* MUL OUcare_05 OUcare logo 50%.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_05 OUcare logo 50%.png"; sourceTree = "<group>"; };
+		637CF222260445BC005F0254 /* MUL OUcare_11 4-person base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare_11 4-person base.png"; sourceTree = "<group>"; };
+		637CF238260448F2005F0254 /* LogInView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInView.h; sourceTree = "<group>"; };
+		637CF239260448F2005F0254 /* LogInView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInView.m; sourceTree = "<group>"; };
+		637CF243260453AE005F0254 /* LoginViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewSetting.h; sourceTree = "<group>"; };
+		637CF244260453AE005F0254 /* LoginViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewSetting.m; sourceTree = "<group>"; };
+		637CF24B26049507005F0254 /* MUL OUcare-15 形象頁up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare-15 形象頁up.png"; sourceTree = "<group>"; };
+		637CF24C26049507005F0254 /* MUL OUcare-16 形象頁down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MUL OUcare-16 形象頁down.png"; sourceTree = "<group>"; };
+		6387352626084D3E00CC643C /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		6387352726084D3E00CC643C /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		6387352A26084D5300CC643C /* LoadingViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewSetting.h; sourceTree = "<group>"; };
+		6387352B26084D5300CC643C /* LoadingViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewSetting.m; sourceTree = "<group>"; };
+		638735352608A37000CC643C /* BackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		638735362608A37000CC643C /* BackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		6387353A2608A45E00CC643C /* BackgroundViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundViewSetting.h; sourceTree = "<group>"; };
+		6387353B2608A45E00CC643C /* BackgroundViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundViewSetting.m; sourceTree = "<group>"; };
+		6387353E2608A71D00CC643C /* SensorLargeSizeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorLargeSizeView.h; sourceTree = "<group>"; };
+		6387353F2608A71D00CC643C /* SensorLargeSizeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorLargeSizeView.m; sourceTree = "<group>"; };
+		638735432608A76400CC643C /* TitleBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleBarView.h; sourceTree = "<group>"; };
+		638735442608A76400CC643C /* TitleBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleBarView.m; sourceTree = "<group>"; };
+		76B386C6500BBC2EAA3C58B7 /* Pods_CAGradientLayerPratice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CAGradientLayerPratice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28B44CCD3C23C479B72A702 /* Pods-CAGradientLayerPratice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAGradientLayerPratice.release.xcconfig"; path = "Target Support Files/Pods-CAGradientLayerPratice/Pods-CAGradientLayerPratice.release.xcconfig"; sourceTree = "<group>"; };
+		B9E2ACF3B03931E2317D7591 /* Pods-CAGradientLayerPratice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAGradientLayerPratice.debug.xcconfig"; path = "Target Support Files/Pods-CAGradientLayerPratice/Pods-CAGradientLayerPratice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +111,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A50AD041B73EB99893A41C9 /* Pods_CAGradientLayerPratice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		365653D28B1D0E39B5A703C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9E2ACF3B03931E2317D7591 /* Pods-CAGradientLayerPratice.debug.xcconfig */,
+				B28B44CCD3C23C479B72A702 /* Pods-CAGradientLayerPratice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		637CF1EA260438BB005F0254 = {
 			isa = PBXGroup;
 			children = (
+				637CF211260445BC005F0254 /* MUL OUcare元件拷貝 */,
 				637CF1F5260438BB005F0254 /* CAGradientLayerPratice */,
 				637CF1F4260438BB005F0254 /* Products */,
+				365653D28B1D0E39B5A703C4 /* Pods */,
+				85179B500FE06A70B9A42568 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +149,13 @@
 		637CF1F5260438BB005F0254 /* CAGradientLayerPratice */ = {
 			isa = PBXGroup;
 			children = (
+				638735422608A75300CC643C /* TitleBarView */,
+				638735342608A31900CC643C /* BackgorundView */,
+				638735332608A29100CC643C /* SensorLargeSizeView */,
+				638735322608A28A00CC643C /* SensorMiddleSizeView */,
+				638735312608A27A00CC643C /* SensorSmallSizeView */,
+				6387352F26084D6C00CC643C /* LogInView */,
+				6387352E26084D5700CC643C /* LoadingView */,
 				637CF1F6260438BB005F0254 /* AppDelegate.h */,
 				637CF1F7260438BB005F0254 /* AppDelegate.m */,
 				637CF1F9260438BB005F0254 /* SceneDelegate.h */,
@@ -76,6 +171,112 @@
 			path = CAGradientLayerPratice;
 			sourceTree = "<group>";
 		};
+		637CF211260445BC005F0254 /* MUL OUcare元件拷貝 */ = {
+			isa = PBXGroup;
+			children = (
+				637CF24B26049507005F0254 /* MUL OUcare-15 形象頁up.png */,
+				637CF24C26049507005F0254 /* MUL OUcare-16 形象頁down.png */,
+				637CF212260445BC005F0254 /* Thumbs.db */,
+				637CF213260445BC005F0254 /* MUL OUcare_14 16-person base.png */,
+				637CF214260445BC005F0254 /* MUL OUcare_09 1-person base.png */,
+				637CF215260445BC005F0254 /* MUL OUcare_13 button3.png */,
+				637CF216260445BC005F0254 /* MUL OUcare_12 caution.png */,
+				637CF217260445BC005F0254 /* MUL OUcare_03 button2.png */,
+				637CF218260445BC005F0254 /* MUL OUcare_10 4-name base.png */,
+				637CF219260445BC005F0254 /* MUL OUcare_01 主頁.png */,
+				637CF21A260445BC005F0254 /* MUL OUcare_08 battery.png */,
+				637CF21B260445BC005F0254 /* MUL OUcare_02 button.png */,
+				637CF21C260445BC005F0254 /* MUL OUcare_04 login paint.png */,
+				637CF21D260445BC005F0254 /* MUL OUcare_07 green.png */,
+				637CF21E260445BC005F0254 /* MUL OUcare_06 1-name base.png */,
+				637CF21F260445BC005F0254 /* 漸層色標示.pptx */,
+				637CF220260445BC005F0254 /* 漸層色標示.pdf */,
+				637CF221260445BC005F0254 /* MUL OUcare_05 OUcare logo 50%.png */,
+				637CF222260445BC005F0254 /* MUL OUcare_11 4-person base.png */,
+			);
+			name = "MUL OUcare元件拷貝";
+			path = "CAGradientLayerPratice/MUL OUcare元件拷貝";
+			sourceTree = "<group>";
+		};
+		6387352E26084D5700CC643C /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				6387352626084D3E00CC643C /* LoadingView.h */,
+				6387352726084D3E00CC643C /* LoadingView.m */,
+				6387352A26084D5300CC643C /* LoadingViewSetting.h */,
+				6387352B26084D5300CC643C /* LoadingViewSetting.m */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		6387352F26084D6C00CC643C /* LogInView */ = {
+			isa = PBXGroup;
+			children = (
+				637CF238260448F2005F0254 /* LogInView.h */,
+				637CF239260448F2005F0254 /* LogInView.m */,
+				637CF243260453AE005F0254 /* LoginViewSetting.h */,
+				637CF244260453AE005F0254 /* LoginViewSetting.m */,
+			);
+			path = LogInView;
+			sourceTree = "<group>";
+		};
+		638735312608A27A00CC643C /* SensorSmallSizeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SensorSmallSizeView;
+			sourceTree = "<group>";
+		};
+		638735322608A28A00CC643C /* SensorMiddleSizeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SensorMiddleSizeView;
+			sourceTree = "<group>";
+		};
+		638735332608A29100CC643C /* SensorLargeSizeView */ = {
+			isa = PBXGroup;
+			children = (
+				6387353E2608A71D00CC643C /* SensorLargeSizeView.h */,
+				6387353F2608A71D00CC643C /* SensorLargeSizeView.m */,
+			);
+			path = SensorLargeSizeView;
+			sourceTree = "<group>";
+		};
+		638735342608A31900CC643C /* BackgorundView */ = {
+			isa = PBXGroup;
+			children = (
+				638735352608A37000CC643C /* BackgroundView.h */,
+				638735362608A37000CC643C /* BackgroundView.m */,
+				6387353A2608A45E00CC643C /* BackgroundViewSetting.h */,
+				6387353B2608A45E00CC643C /* BackgroundViewSetting.m */,
+			);
+			path = BackgorundView;
+			sourceTree = "<group>";
+		};
+		638735422608A75300CC643C /* TitleBarView */ = {
+			isa = PBXGroup;
+			children = (
+				638735432608A76400CC643C /* TitleBarView.h */,
+				638735442608A76400CC643C /* TitleBarView.m */,
+				633F6DBF260978E800BA7FE0 /* TitleBarViewController.h */,
+				633F6DC0260978E800BA7FE0 /* TitleBarViewController.m */,
+				633F6DC32609791700BA7FE0 /* TitleBarModel.h */,
+				633F6DC42609791700BA7FE0 /* TitleBarModel.m */,
+				633F6DC7260979D300BA7FE0 /* TitleBarViewSetting.h */,
+				633F6DC8260979D300BA7FE0 /* TitleBarViewSetting.m */,
+			);
+			path = TitleBarView;
+			sourceTree = "<group>";
+		};
+		85179B500FE06A70B9A42568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76B386C6500BBC2EAA3C58B7 /* Pods_CAGradientLayerPratice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 637CF20C260438BE005F0254 /* Build configuration list for PBXNativeTarget "CAGradientLayerPratice" */;
 			buildPhases = (
+				CD8704458C4CBE5D56F96578 /* [CP] Check Pods Manifest.lock */,
 				637CF1EF260438BB005F0254 /* Sources */,
 				637CF1F0260438BB005F0254 /* Frameworks */,
 				637CF1F1260438BB005F0254 /* Resources */,
+				759CCB58981B8FEE8F948C14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +335,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637CF229260445BC005F0254 /* MUL OUcare_03 button2.png in Resources */,
+				637CF224260445BC005F0254 /* Thumbs.db in Resources */,
+				637CF232260445BC005F0254 /* 漸層色標示.pdf in Resources */,
+				637CF226260445BC005F0254 /* MUL OUcare_09 1-person base.png in Resources */,
 				637CF206260438BD005F0254 /* LaunchScreen.storyboard in Resources */,
+				637CF24E26049507005F0254 /* MUL OUcare-16 形象頁down.png in Resources */,
+				637CF225260445BC005F0254 /* MUL OUcare_14 16-person base.png in Resources */,
 				637CF203260438BD005F0254 /* Assets.xcassets in Resources */,
+				637CF22B260445BC005F0254 /* MUL OUcare_01 主頁.png in Resources */,
+				637CF22E260445BC005F0254 /* MUL OUcare_04 login paint.png in Resources */,
+				637CF22C260445BC005F0254 /* MUL OUcare_08 battery.png in Resources */,
+				637CF227260445BC005F0254 /* MUL OUcare_13 button3.png in Resources */,
+				637CF234260445BC005F0254 /* MUL OUcare_11 4-person base.png in Resources */,
+				637CF228260445BC005F0254 /* MUL OUcare_12 caution.png in Resources */,
+				637CF22D260445BC005F0254 /* MUL OUcare_02 button.png in Resources */,
+				637CF24D26049507005F0254 /* MUL OUcare-15 形象頁up.png in Resources */,
+				637CF230260445BC005F0254 /* MUL OUcare_06 1-name base.png in Resources */,
+				637CF233260445BC005F0254 /* MUL OUcare_05 OUcare logo 50%.png in Resources */,
+				637CF22F260445BC005F0254 /* MUL OUcare_07 green.png in Resources */,
+				637CF231260445BC005F0254 /* 漸層色標示.pptx in Resources */,
+				637CF22A260445BC005F0254 /* MUL OUcare_10 4-name base.png in Resources */,
 				637CF201260438BB005F0254 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		759CCB58981B8FEE8F948C14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CAGradientLayerPratice/Pods-CAGradientLayerPratice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CAGradientLayerPratice/Pods-CAGradientLayerPratice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CAGradientLayerPratice/Pods-CAGradientLayerPratice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD8704458C4CBE5D56F96578 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CAGradientLayerPratice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		637CF1EF260438BB005F0254 /* Sources */ = {
@@ -147,7 +411,18 @@
 			files = (
 				637CF1FE260438BB005F0254 /* ViewController.m in Sources */,
 				637CF1F8260438BB005F0254 /* AppDelegate.m in Sources */,
+				633F6DC52609791700BA7FE0 /* TitleBarModel.m in Sources */,
+				6387352826084D3E00CC643C /* LoadingView.m in Sources */,
+				633F6DC1260978E800BA7FE0 /* TitleBarViewController.m in Sources */,
+				638735452608A76400CC643C /* TitleBarView.m in Sources */,
+				637CF23A260448F2005F0254 /* LogInView.m in Sources */,
+				637CF245260453AE005F0254 /* LoginViewSetting.m in Sources */,
+				6387353C2608A45E00CC643C /* BackgroundViewSetting.m in Sources */,
+				633F6DC9260979D300BA7FE0 /* TitleBarViewSetting.m in Sources */,
+				638735372608A37000CC643C /* BackgroundView.m in Sources */,
+				638735402608A71D00CC643C /* SensorLargeSizeView.m in Sources */,
 				637CF209260438BD005F0254 /* main.m in Sources */,
+				6387352C26084D5300CC643C /* LoadingViewSetting.m in Sources */,
 				637CF1FB260438BB005F0254 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,6 +563,7 @@
 		};
 		637CF20D260438BE005F0254 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9E2ACF3B03931E2317D7591 /* Pods-CAGradientLayerPratice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +582,7 @@
 		};
 		637CF20E260438BE005F0254 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28B44CCD3C23C479B72A702 /* Pods-CAGradientLayerPratice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
