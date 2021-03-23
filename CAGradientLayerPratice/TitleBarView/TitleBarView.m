@@ -39,8 +39,20 @@ typedef NS_ENUM(NSInteger, FunctionButtonEnum) {
         UIButton *button = [[UIButton alloc] init];
         [button addTarget:self action:@selector(touchedButton:) forControlEvents:UIControlEventTouchUpInside];
         [button setTag:i];
-        [button setTitle:[NSString stringWithFormat:@"%d", i] forState:UIControlStateNormal];
-        [button setBackgroundColor:[UIColor clearColor]];
+        NSString *Title_String;
+        switch (i) {
+            case 0:
+                Title_String = @"Monitor";
+                break;
+            case 1:
+                Title_String = @"Add Device";
+                break;
+            default:
+                break;
+        }
+        [button setTitle:Title_String forState:UIControlStateNormal];
+        [button setContentVerticalAlignment:UIControlContentVerticalAlignmentBottom];
+//        [button setBackgroundColor:[UIColor yellowColor]];
         [self.Button_Array_List addObject:button];
         [self.Content_View addSubview:button];
     }
@@ -54,8 +66,8 @@ typedef NS_ENUM(NSInteger, FunctionButtonEnum) {
     Left_Button = [self.Button_Array_List objectAtIndex:0];
     NSLog(@"Left_Button = %@", Left_Button);
     [Left_Button mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.Content_View.mas_safeAreaLayoutGuideTop);
-        make.height.equalTo(self.Content_View.mas_height).multipliedBy(0.2);
+        make.top.equalTo(self.Content_View.mas_top);
+        make.height.equalTo(self.Content_View.mas_height).multipliedBy(14.0/18.0);
         make.left.equalTo(self.Content_View.mas_safeAreaLayoutGuideLeft);
         make.width.equalTo(self.Content_View.mas_width).multipliedBy(0.5);
     }];
@@ -64,8 +76,8 @@ typedef NS_ENUM(NSInteger, FunctionButtonEnum) {
     Right_Button = [self.Button_Array_List objectAtIndex:1];
     
     [Right_Button mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.Content_View.mas_safeAreaLayoutGuideTop);
-        make.height.equalTo(self.Content_View.mas_height).multipliedBy(0.2);
+        make.top.equalTo(self.Content_View.mas_top);
+        make.height.equalTo(self.Content_View.mas_height).multipliedBy(14.0/18.0);
         make.width.equalTo(self.Content_View.mas_width).multipliedBy(0.5);
         make.right.equalTo(self.Content_View.mas_safeAreaLayoutGuideRight);
     }];

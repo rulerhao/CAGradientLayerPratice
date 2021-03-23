@@ -11,6 +11,7 @@
 
 @property (strong, nonatomic) UIView *Content_View;
 
+@property (strong, nonatomic) UIImageView *One_Person_Background_ImageView;
 @property (strong, nonatomic) UICollectionView *CollectionView;
 
 @end
@@ -28,6 +29,13 @@
 }
 
 - (void) viewInit {
+    
+    //--------------------- Person Background ImageView -----------------------
+    self.One_Person_Background_ImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MUL OUcare_09 1-person base.png"]];
+    [self.One_Person_Background_ImageView setFrame:CGRectZero];
+    [self.One_Person_Background_ImageView setBackgroundColor:[UIColor blueColor]];
+    [self.Content_View addSubview:self.One_Person_Background_ImageView];
+    
     //--------------------- Collection View -----------------------
     UICollectionViewFlowLayout *CollectionViewFlowLayout = [[UICollectionViewFlowLayout alloc] init];
     CollectionViewFlowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -36,23 +44,40 @@
     [self.CollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CollectionViewIdentifier"];
     self.CollectionView.delegate = self.delegate;
     self.CollectionView.dataSource = self.delegate;
-    self.CollectionView.backgroundColor = [UIColor redColor];
+    self.CollectionView.backgroundColor = [UIColor clearColor];
     
     UIPinchGestureRecognizer *gesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self.delegate action:@selector(didReceivePinchGesture:)];
     [self.CollectionView addGestureRecognizer:gesture];
     
-    [self.Content_View addSubview: self.CollectionView];
+    [self.One_Person_Background_ImageView addSubview: self.CollectionView];
 }
 
 - (void) updateConstraints {
     [super updateConstraints];
-    
+    //--------------------- Person Background ImageView -----------------------
+    float Person_Background_Width = self.Content_View.bounds.size.width * 0.92;
+    NSLog(@"Width = %f", Person_Background_Width);
+    float Person_Background_Height = Person_Background_Width * self.One_Person_Background_ImageView.image.size.height / self.One_Person_Background_ImageView.image.size.width;
+    NSLog(@"Height = %f", Person_Background_Height);
+    [self.One_Person_Background_ImageView mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.Content_View.mas_top);
+//        make.bottom.equalTo(self.Content_View.mas_bottom);
+//        make.left.equalTo(self.Content_View.mas_left);
+//        make.right.equalTo(self.Content_View.mas_right);
+//        make.top.equalTo(self.Content_View.mas_top);
+//        make.bottom.equalTo(self.Content_View.mas_bottom);
+//        make.top.equalTo(self.Content_View.mas_bottom).offset(- Person_Background_Height);
+        make.centerY.equalTo(self.Content_View.mas_centerY);
+        make.height.equalTo(@(Person_Background_Height));
+        make.centerX.equalTo(self.Content_View.mas_centerX);
+        make.width.equalTo(self.Content_View.mas_width).multipliedBy(0.92);
+    }];
     //--------------------- Collection View -----------------------
     [self.CollectionView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.Content_View.mas_safeAreaLayoutGuideTop);
-        make.bottom.equalTo(self.Content_View.mas_safeAreaLayoutGuideBottom);
-        make.left.equalTo(self.Content_View.mas_safeAreaLayoutGuideLeft);
-        make.right.equalTo(self.Content_View.mas_safeAreaLayoutGuideRight);
+        make.top.equalTo(self.One_Person_Background_ImageView.mas_top);
+        make.bottom.equalTo(self.One_Person_Background_ImageView.mas_bottom);
+        make.left.equalTo(self.One_Person_Background_ImageView.mas_left);
+        make.right.equalTo(self.One_Person_Background_ImageView.mas_right);
     }];
 }
 
