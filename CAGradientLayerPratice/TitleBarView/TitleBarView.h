@@ -7,7 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @class TitleBarView;
 
 @protocol TitleBarViewDelegate <NSObject>
@@ -22,6 +21,6 @@
 @property (strong, nonatomic) id <TitleBarViewDelegate> delegate;
 @property (strong, nonatomic) UIButton *Left_Button;
 @property (strong, nonatomic) UIButton *Right_Button;
-@property (strong, nonatomic) NSMutableArray *Button_Array_List;
+@property (strong, nonatomic) NSMutableArray <UIButton *> *Button_Array_List;
 
 @end

@@ -14,7 +14,7 @@
 @end
 
 @implementation TitleBarView
-typedef NS_ENUM(NSInteger, FunctionButtonEnum){
+typedef NS_ENUM(NSInteger, FunctionButtonEnum) {
     ButtonHaveNotThing = -1,
     SensorController = 1,
     RegisterController = 2
@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, FunctionButtonEnum){
 
 - (void) entranceMethod : (UIView *) Content_View {
     self.Content_View = Content_View;
+    self.Button_Array_List = [[NSMutableArray alloc] init];
     
     [self viewInit];
 
@@ -33,14 +34,14 @@ typedef NS_ENUM(NSInteger, FunctionButtonEnum){
 - (void) viewInit {
     
     //--------------------- Log In Title Label -----------------------
-    UIButton *LeftButton = [[UIButton alloc] init];
-    UIButton *RightButton = [[UIButton alloc] init];
     
     for(int i = 0; i < 2; i++) {
         UIButton *button = [[UIButton alloc] init];
         [button addTarget:self action:@selector(touchedButton:) forControlEvents:UIControlEventTouchUpInside];
         [button setTag:i];
-        [button setBackgroundColor:[UIColor blackColor]];
+        [button setTitle:[NSString stringWithFormat:@"%d", i] forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor clearColor]];
+        [self.Button_Array_List addObject:button];
         [self.Content_View addSubview:button];
     }
 }
@@ -50,26 +51,26 @@ typedef NS_ENUM(NSInteger, FunctionButtonEnum){
     
     //--------------------- Log In Title Label -----------------------
     UIButton *Left_Button = [UIButton alloc];
-    Left_Button = [self.Content_View viewWithTag:0];
-    
+    Left_Button = [self.Button_Array_List objectAtIndex:0];
+    NSLog(@"Left_Button = %@", Left_Button);
     [Left_Button mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.Content_View.mas_safeAreaLayoutGuideTop);
         make.height.equalTo(self.Content_View.mas_height).multipliedBy(0.2);
         make.left.equalTo(self.Content_View.mas_safeAreaLayoutGuideLeft);
-        make.right.equalTo(self.Content_View.mas_safeAreaLayoutGuideRight);
+        make.width.equalTo(self.Content_View.mas_width).multipliedBy(0.5);
     }];
     
     UIButton *Right_Button = [UIButton alloc];
-    Right_Button = [self.Content_View viewWithTag:1];
+    Right_Button = [self.Button_Array_List objectAtIndex:1];
     
     [Right_Button mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.Content_View.mas_safeAreaLayoutGuideTop);
         make.height.equalTo(self.Content_View.mas_height).multipliedBy(0.2);
-        make.left.equalTo(self.Content_View.mas_safeAreaLayoutGuideLeft);
+        make.width.equalTo(self.Content_View.mas_width).multipliedBy(0.5);
         make.right.equalTo(self.Content_View.mas_safeAreaLayoutGuideRight);
     }];
     
-    [self.Content_View layoutIfNeeded];
+    //[self.Content_View layoutIfNeeded];
 }
 
 - (void) writeLayers {
