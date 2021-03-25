@@ -13,6 +13,10 @@
 		633F6DC9260979D300BA7FE0 /* TitleBarViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DC8260979D300BA7FE0 /* TitleBarViewSetting.m */; };
 		633F6DCD2609CBD600BA7FE0 /* SensorLargeSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DCC2609CBD600BA7FE0 /* SensorLargeSizeViewController.m */; };
 		633F6DD32609F1F200BA7FE0 /* SensorLargeSizeViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DD22609F1F200BA7FE0 /* SensorLargeSizeViewSetting.m */; };
+		6359A011260B3416002A868C /* shutterstock_1551101669.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6359A00C260B3416002A868C /* shutterstock_1551101669.jpg */; };
+		6359A012260B3416002A868C /* shutterstock_1351910084.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6359A00D260B3416002A868C /* shutterstock_1351910084.jpg */; };
+		6359A013260B3416002A868C /* shutterstock_147477632.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6359A00E260B3416002A868C /* shutterstock_147477632.jpg */; };
+		6359A014260B3416002A868C /* shutterstock_67174954.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6359A00F260B3416002A868C /* shutterstock_67174954.jpg */; };
 		637CF1F8260438BB005F0254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF1F7260438BB005F0254 /* AppDelegate.m */; };
 		637CF1FB260438BB005F0254 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF1FA260438BB005F0254 /* SceneDelegate.m */; };
 		637CF1FE260438BB005F0254 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CF1FD260438BB005F0254 /* ViewController.m */; };
@@ -60,6 +64,10 @@
 		633F6DCC2609CBD600BA7FE0 /* SensorLargeSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorLargeSizeViewController.m; sourceTree = "<group>"; };
 		633F6DD12609F1F200BA7FE0 /* SensorLargeSizeViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorLargeSizeViewSetting.h; sourceTree = "<group>"; };
 		633F6DD22609F1F200BA7FE0 /* SensorLargeSizeViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorLargeSizeViewSetting.m; sourceTree = "<group>"; };
+		6359A00C260B3416002A868C /* shutterstock_1551101669.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_1551101669.jpg; sourceTree = "<group>"; };
+		6359A00D260B3416002A868C /* shutterstock_1351910084.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_1351910084.jpg; sourceTree = "<group>"; };
+		6359A00E260B3416002A868C /* shutterstock_147477632.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_147477632.jpg; sourceTree = "<group>"; };
+		6359A00F260B3416002A868C /* shutterstock_67174954.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_67174954.jpg; sourceTree = "<group>"; };
 		637CF1F3260438BB005F0254 /* CAGradientLayerPratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAGradientLayerPratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		637CF1F6260438BB005F0254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		637CF1F7260438BB005F0254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -140,9 +148,22 @@
 			path = SensorView;
 			sourceTree = "<group>";
 		};
+		6359A00A260B3416002A868C /* 幼兒圖片拷貝 */ = {
+			isa = PBXGroup;
+			children = (
+				6359A00C260B3416002A868C /* shutterstock_1551101669.jpg */,
+				6359A00D260B3416002A868C /* shutterstock_1351910084.jpg */,
+				6359A00E260B3416002A868C /* shutterstock_147477632.jpg */,
+				6359A00F260B3416002A868C /* shutterstock_67174954.jpg */,
+			);
+			name = "幼兒圖片拷貝";
+			path = "CAGradientLayerPratice/幼兒圖片拷貝";
+			sourceTree = "<group>";
+		};
 		637CF1EA260438BB005F0254 = {
 			isa = PBXGroup;
 			children = (
+				6359A00A260B3416002A868C /* 幼兒圖片拷貝 */,
 				637CF211260445BC005F0254 /* MUL OUcare元件拷貝 */,
 				637CF1F5260438BB005F0254 /* CAGradientLayerPratice */,
 				637CF1F4260438BB005F0254 /* Products */,
@@ -359,15 +380,19 @@
 				637CF226260445BC005F0254 /* MUL OUcare_09 1-person base.png in Resources */,
 				637CF206260438BD005F0254 /* LaunchScreen.storyboard in Resources */,
 				637CF24E26049507005F0254 /* MUL OUcare-16 形象頁down.png in Resources */,
+				6359A011260B3416002A868C /* shutterstock_1551101669.jpg in Resources */,
 				637CF225260445BC005F0254 /* MUL OUcare_14 16-person base.png in Resources */,
 				637CF203260438BD005F0254 /* Assets.xcassets in Resources */,
 				637CF22B260445BC005F0254 /* MUL OUcare_01 主頁.png in Resources */,
 				637CF22E260445BC005F0254 /* MUL OUcare_04 login paint.png in Resources */,
 				637CF22C260445BC005F0254 /* MUL OUcare_08 battery.png in Resources */,
 				637CF227260445BC005F0254 /* MUL OUcare_13 button3.png in Resources */,
+				6359A012260B3416002A868C /* shutterstock_1351910084.jpg in Resources */,
 				637CF234260445BC005F0254 /* MUL OUcare_11 4-person base.png in Resources */,
 				637CF228260445BC005F0254 /* MUL OUcare_12 caution.png in Resources */,
 				637CF22D260445BC005F0254 /* MUL OUcare_02 button.png in Resources */,
+				6359A014260B3416002A868C /* shutterstock_67174954.jpg in Resources */,
+				6359A013260B3416002A868C /* shutterstock_147477632.jpg in Resources */,
 				637CF24D26049507005F0254 /* MUL OUcare-15 形象頁up.png in Resources */,
 				637CF230260445BC005F0254 /* MUL OUcare_06 1-name base.png in Resources */,
 				637CF233260445BC005F0254 /* MUL OUcare_05 OUcare logo 50%.png in Resources */,

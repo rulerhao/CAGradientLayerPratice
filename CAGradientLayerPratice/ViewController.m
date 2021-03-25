@@ -13,6 +13,7 @@
 #import "SensorLargeSizeViewController.h"
 #import <math.h>
 #import <Masonry.h>
+
 @interface ViewController ()
 
 @property (strong, nonatomic) CAGradientLayer *GradientTestLayer;
@@ -24,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     BackgroundView *backgroundView = [BackgroundView alloc];
     [backgroundView entranceMethod:self.view];
 //    LogInView *logInView = [LogInView alloc];
@@ -69,6 +71,8 @@
     }];
     
     [self.sensorLargeSizeViewController initView];
+
+    
 }
 
 
