@@ -36,6 +36,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) float Baby_Photo_X;
 @property (assign, nonatomic) float Baby_Photo_Y;
 
+//--------------------- Baby Name View -----------------------
+@property (assign, nonatomic) float Baby_Name_Width;
+@property (assign, nonatomic) float Baby_Name_Height;
+@property (assign, nonatomic) float Baby_Name_X;
+@property (assign, nonatomic) float Baby_Name_Y;
+@property (assign, nonatomic) float Baby_Name_Corner_Radius;
+
 //--------------------- Status Bar -----------------------
 @property (assign, nonatomic) float Status_Left_Distance;
 

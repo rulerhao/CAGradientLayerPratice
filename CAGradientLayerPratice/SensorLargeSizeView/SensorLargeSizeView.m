@@ -20,6 +20,8 @@
 
 @property (strong, nonatomic) UIImageView *Baby_Image_Mask_ImageView;
 
+@property (strong, nonatomic) UILabel *Baby_Name_Label;
+
 @property (strong, nonatomic) UIImageView *Baby_Breath_Status_ImageView;
 @property (strong, nonatomic) UILabel *Baby_Temperature_Label;
 @property (strong, nonatomic) UIImageView *Sensor_Battery_Volume_Label;
@@ -59,6 +61,7 @@
     [self.One_Person_Background_ImageView setFrame:CGRectZero];
 //    [self.One_Person_Background_ImageView setBackgroundColor:[UIColor blueColor]];
     [self.Content_View addSubview:self.One_Person_Background_ImageView];
+    // TODO: Background 需改為以code生成
     
     //--------------------- Baby Image ImageView -----------------------
     self.Baby_Image_ImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"shutterstock_1351910084.jpg"]];
@@ -73,6 +76,15 @@
 //    [self.Baby_Image_Mask_ImageView setBackgroundColor:[UIColor blueColor]];
     [self.Content_View addSubview:self.Baby_Image_Mask_ImageView];
     
+    //--------------------- Baby Name View -----------------------
+    self.Baby_Name_Label = [[UILabel alloc] initWithFrame:CGRectZero];
+    [self.Baby_Name_Label setText:@"Max"];
+    [self.Baby_Name_Label setFont:[UIFont fontWithName:@"Helvetica" size:20]];
+    [self.Baby_Name_Label setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.6]];
+    [self.Baby_Name_Label setTextAlignment:NSTextAlignmentCenter];
+    
+    [self.Content_View addSubview:self.Baby_Name_Label];
+    
     //--------------------- Breath Status ImageView -----------------------
     self.Baby_Breath_Status_ImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MUL OUcare_07 green.png"]];
     [self.Baby_Breath_Status_ImageView setFrame:CGRectZero];
@@ -83,7 +95,7 @@
     self.Baby_Temperature_Label = [[UILabel alloc] initWithFrame:CGRectZero];
     [self.Baby_Temperature_Label setText:[NSString stringWithFormat:@"%.1f%@", 36.5, @"℃"]];
     [self.Baby_Temperature_Label setFont:[UIFont fontWithName:@"Helvetica" size:35]];
-    [self.Baby_Temperature_Label setBackgroundColor:[UIColor blueColor]];
+//    [self.Baby_Temperature_Label setBackgroundColor:[UIColor blueColor]];
     [self.Content_View addSubview:self.Baby_Temperature_Label];
     
     //--------------------- Sensor Battery Volume ImageView -----------------------
@@ -158,6 +170,14 @@
         make.centerX.equalTo(self.One_Person_Background_ImageView.mas_centerX);
         make.width.equalTo(self.One_Person_Background_ImageView.mas_width);
         make.height.equalTo(self.One_Person_Background_ImageView.mas_height);
+    }];
+    
+    //--------------------- Baby Name View -----------------------
+    [self.Baby_Name_Label mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.Baby_Image_ImageView.mas_bottom);
+        make.centerX.equalTo(self.Baby_Image_ImageView.mas_centerX);
+        make.width.equalTo(@(sensorLargeSizeViewSetting.Baby_Name_Width));
+        make.height.equalTo(@(sensorLargeSizeViewSetting.Baby_Name_Height));
     }];
     
     //--------------------- Breath Status ImageView -----------------------
@@ -366,6 +386,20 @@
 }
 
 - (void) writeLayers {
+    //--------------------- Baby Name View -----------------------
+    CAShapeLayer *Baby_Name_Shape_Layer = [[CAShapeLayer alloc] init];
+    
+    UIBezierPath *Baby_Name_Path1 = [[UIBezierPath alloc] init];
+    Baby_Name_Path1 = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(sensorLargeSizeViewSetting.Baby_Name_X,
+                                                               sensorLargeSizeViewSetting.Baby_Name_Y,
+                                                               sensorLargeSizeViewSetting.Baby_Name_Width,
+                                                               sensorLargeSizeViewSetting.Baby_Name_Height) cornerRadius:sensorLargeSizeViewSetting.Baby_Name_Corner_Radius];
+    [Baby_Name_Shape_Layer setPath:Baby_Name_Path1.CGPath];
+    [Baby_Name_Shape_Layer setFillRule:kCAFillRuleEvenOdd];
+    self.Baby_Name_Label.layer.mask = Baby_Name_Shape_Layer;
+    
+    //--------------------- Photo Image View -----------------------
+
     CAShapeLayer *Baby_Image_Mask_Shape_Layer = [[CAShapeLayer alloc] init];
     
     UIBezierPath *Baby_Image_Mask_Path1 = [[UIBezierPath alloc] init];

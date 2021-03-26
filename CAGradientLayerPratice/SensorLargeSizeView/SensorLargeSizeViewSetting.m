@@ -89,6 +89,17 @@
         
         self.Baby_Photo_X = 0;
         self.Baby_Photo_Y = 0;
+        //--------------------- Baby Name View -----------------------
+        float Origin_Baby_Name_Width = 60.0;
+        float Origin_Baby_Name_Height = 20.0;
+        float Origin_Baby_Name_Corner_Radius = 10.0;
+        
+        self.Baby_Name_Width = Origin_Baby_Name_Width * self.Ratio_To_Origin;
+        self.Baby_Name_Height = Origin_Baby_Name_Height * self.Ratio_To_Origin;
+        self.Baby_Name_X = 0;
+        self.Baby_Name_Y = 0;
+        self.Baby_Name_Corner_Radius = Origin_Baby_Name_Corner_Radius * self.Ratio_To_Origin;
+        
         //--------------------- Breath Status ImageView -----------------------
         float Origin_Breath_Status_Left_Distance = 58.5;
         float Origin_Breath_Status_To_Photo_Distance = 13.5;

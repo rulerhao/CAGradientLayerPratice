@@ -13,6 +13,9 @@
 		633F6DC9260979D300BA7FE0 /* TitleBarViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DC8260979D300BA7FE0 /* TitleBarViewSetting.m */; };
 		633F6DCD2609CBD600BA7FE0 /* SensorLargeSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DCC2609CBD600BA7FE0 /* SensorLargeSizeViewController.m */; };
 		633F6DD32609F1F200BA7FE0 /* SensorLargeSizeViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DD22609F1F200BA7FE0 /* SensorLargeSizeViewSetting.m */; };
+		63482CF1260C7B1B0056905B /* SensorMiddleSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63482CF0260C7B1B0056905B /* SensorMiddleSizeView.m */; };
+		63482CF5260C7B310056905B /* SensorMiddleSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63482CF4260C7B310056905B /* SensorMiddleSizeViewController.m */; };
+		63482CF9260C7B4C0056905B /* SensorMiddleSizeViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 63482CF8260C7B4C0056905B /* SensorMiddleSizeViewSetting.m */; };
 		6359A011260B3416002A868C /* shutterstock_1551101669.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6359A00C260B3416002A868C /* shutterstock_1551101669.jpg */; };
 		6359A012260B3416002A868C /* shutterstock_1351910084.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6359A00D260B3416002A868C /* shutterstock_1351910084.jpg */; };
 		6359A013260B3416002A868C /* shutterstock_147477632.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6359A00E260B3416002A868C /* shutterstock_147477632.jpg */; };
@@ -64,6 +67,12 @@
 		633F6DCC2609CBD600BA7FE0 /* SensorLargeSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorLargeSizeViewController.m; sourceTree = "<group>"; };
 		633F6DD12609F1F200BA7FE0 /* SensorLargeSizeViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorLargeSizeViewSetting.h; sourceTree = "<group>"; };
 		633F6DD22609F1F200BA7FE0 /* SensorLargeSizeViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorLargeSizeViewSetting.m; sourceTree = "<group>"; };
+		63482CEF260C7B1B0056905B /* SensorMiddleSizeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorMiddleSizeView.h; sourceTree = "<group>"; };
+		63482CF0260C7B1B0056905B /* SensorMiddleSizeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorMiddleSizeView.m; sourceTree = "<group>"; };
+		63482CF3260C7B310056905B /* SensorMiddleSizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorMiddleSizeViewController.h; sourceTree = "<group>"; };
+		63482CF4260C7B310056905B /* SensorMiddleSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorMiddleSizeViewController.m; sourceTree = "<group>"; };
+		63482CF7260C7B4C0056905B /* SensorMiddleSizeViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorMiddleSizeViewSetting.h; sourceTree = "<group>"; };
+		63482CF8260C7B4C0056905B /* SensorMiddleSizeViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorMiddleSizeViewSetting.m; sourceTree = "<group>"; };
 		6359A00C260B3416002A868C /* shutterstock_1551101669.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_1551101669.jpg; sourceTree = "<group>"; };
 		6359A00D260B3416002A868C /* shutterstock_1351910084.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_1351910084.jpg; sourceTree = "<group>"; };
 		6359A00E260B3416002A868C /* shutterstock_147477632.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_147477632.jpg; sourceTree = "<group>"; };
@@ -265,6 +274,12 @@
 		638735322608A28A00CC643C /* SensorMiddleSizeView */ = {
 			isa = PBXGroup;
 			children = (
+				63482CEF260C7B1B0056905B /* SensorMiddleSizeView.h */,
+				63482CF0260C7B1B0056905B /* SensorMiddleSizeView.m */,
+				63482CF3260C7B310056905B /* SensorMiddleSizeViewController.h */,
+				63482CF4260C7B310056905B /* SensorMiddleSizeViewController.m */,
+				63482CF7260C7B4C0056905B /* SensorMiddleSizeViewSetting.h */,
+				63482CF8260C7B4C0056905B /* SensorMiddleSizeViewSetting.m */,
 			);
 			path = SensorMiddleSizeView;
 			sourceTree = "<group>";
@@ -458,11 +473,14 @@
 				633F6DD32609F1F200BA7FE0 /* SensorLargeSizeViewSetting.m in Sources */,
 				6387352826084D3E00CC643C /* LoadingView.m in Sources */,
 				633F6DC1260978E800BA7FE0 /* TitleBarViewController.m in Sources */,
+				63482CF5260C7B310056905B /* SensorMiddleSizeViewController.m in Sources */,
 				638735452608A76400CC643C /* TitleBarView.m in Sources */,
 				637CF23A260448F2005F0254 /* LogInView.m in Sources */,
 				637CF245260453AE005F0254 /* LoginViewSetting.m in Sources */,
 				6387353C2608A45E00CC643C /* BackgroundViewSetting.m in Sources */,
+				63482CF1260C7B1B0056905B /* SensorMiddleSizeView.m in Sources */,
 				633F6DCD2609CBD600BA7FE0 /* SensorLargeSizeViewController.m in Sources */,
+				63482CF9260C7B4C0056905B /* SensorMiddleSizeViewSetting.m in Sources */,
 				633F6DC9260979D300BA7FE0 /* TitleBarViewSetting.m in Sources */,
 				638735372608A37000CC643C /* BackgroundView.m in Sources */,
 				638735402608A71D00CC643C /* SensorLargeSizeView.m in Sources */,

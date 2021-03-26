@@ -11,6 +11,7 @@
 #import "BackgroundView.h"
 #import "TitleBarViewController.h"
 #import "SensorLargeSizeViewController.h"
+#import "SensorMiddleSizeViewController.h"
 #import <math.h>
 #import <Masonry.h>
 
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) CAGradientLayer *GradientTestLayer;
 @property (strong, nonatomic) TitleBarViewController *titleBarViewController;
 @property (strong, nonatomic) SensorLargeSizeViewController *sensorLargeSizeViewController;
+@property (strong, nonatomic) SensorMiddleSizeViewController *sensorMiddleSizeViewController;
 @end
 
 @implementation ViewController
@@ -53,26 +55,44 @@
 
     [self.titleBarViewController initView];
     //--
-    self.sensorLargeSizeViewController = [[SensorLargeSizeViewController alloc] init];
-    [self.sensorLargeSizeViewController.view setAutoresizingMask:UIViewAutoresizingNone];
-    [self.sensorLargeSizeViewController.view setUserInteractionEnabled:YES];
-    [self addChildViewController:self.sensorLargeSizeViewController];
+//    self.sensorLargeSizeViewController = [[SensorLargeSizeViewController alloc] init];
+//    [self.sensorLargeSizeViewController.view setAutoresizingMask:UIViewAutoresizingNone];
+//    [self.sensorLargeSizeViewController.view setUserInteractionEnabled:YES];
+//    [self addChildViewController:self.sensorLargeSizeViewController];
+//
+//    [self.view addSubview:self.sensorLargeSizeViewController.view];
+//    [self.sensorLargeSizeViewController didMoveToParentViewController:self];
+//
+//    [self.sensorLargeSizeViewController.view setHidden:NO];
+//
+//    [self.sensorLargeSizeViewController.view mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.height.equalTo(self.view.mas_height).multipliedBy(0.82);
+//        make.bottom.equalTo(self.view.mas_bottom);
+//        make.left.equalTo(self.view.mas_left);
+//        make.right.equalTo(self.view.mas_right);
+//    }];
+//
+//    [self.sensorLargeSizeViewController initView];
+
+    //--
+    self.sensorMiddleSizeViewController = [[SensorMiddleSizeViewController alloc] init];
+    [self.sensorMiddleSizeViewController.view setAutoresizingMask:UIViewAutoresizingNone];
+    [self.sensorMiddleSizeViewController.view setUserInteractionEnabled:YES];
+    [self addChildViewController:self.sensorMiddleSizeViewController];
     
-    [self.view addSubview:self.sensorLargeSizeViewController.view];
-    [self.sensorLargeSizeViewController didMoveToParentViewController:self];
+    [self.view addSubview:self.sensorMiddleSizeViewController.view];
+    [self.sensorMiddleSizeViewController didMoveToParentViewController:self];
     
-    [self.sensorLargeSizeViewController.view setHidden:NO];
+    [self.sensorMiddleSizeViewController.view setHidden:NO];
     
-    [self.sensorLargeSizeViewController.view mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.sensorMiddleSizeViewController.view mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(self.view.mas_height).multipliedBy(0.82);
         make.bottom.equalTo(self.view.mas_bottom);
         make.left.equalTo(self.view.mas_left);
         make.right.equalTo(self.view.mas_right);
     }];
     
-    [self.sensorLargeSizeViewController initView];
-
-    
+    [self.sensorMiddleSizeViewController initView];
 }
 
 
