@@ -5,34 +5,34 @@
 //  Created by louie on 2021/3/25.
 //
 
-#import "SensorMiddleSizeViewController.h"
-#import "SensorMiddleSizeView.h"
-#import "SensorMiddleSizeViewSetting.h"
-@interface SensorMiddleSizeViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+#import "SensorSmallSizeViewController.h"
+#import "SensorSmallSizeView.h"
+#import "SensorSmallSizeViewSetting.h"
+@interface SensorSmallSizeViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
-    SensorMiddleSizeViewSetting *sensorMiddleSizeViewSetting;
+    SensorSmallSizeViewSetting *sensorSmallSizeViewSetting;
 }
-@property (strong, nonatomic) SensorMiddleSizeView *sensorMiddleSizeView;
+@property (strong, nonatomic) SensorSmallSizeView *sensorSmallSizeView;
 @property (strong, nonatomic) UICollectionView *CardCollectionView;
 
 @end
 
-@implementation SensorMiddleSizeViewController
+@implementation SensorSmallSizeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
 
 - (void) initView {
-    sensorMiddleSizeViewSetting = [[SensorMiddleSizeViewSetting alloc] init];
+    sensorSmallSizeViewSetting = [[SensorSmallSizeViewSetting alloc] init];
     
-    self.sensorMiddleSizeView = [SensorMiddleSizeView alloc];
-    self.sensorMiddleSizeView.delegate = self;
-    [self.sensorMiddleSizeView entranceMethod:self.view];
+    self.sensorSmallSizeView = [SensorSmallSizeView alloc];
+    self.sensorSmallSizeView.delegate = self;
+    [self.sensorSmallSizeView entranceMethod:self.view];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 4;
+    return 16;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -41,7 +41,7 @@
     // 藉此判定是否要新增 Cell 中的 View
     if ([[cell subviews] count] == 1 || [[cell subviews] count] == 0) {
         NSLog(@"CardCollectionViewCell");
-        [self.sensorMiddleSizeView cellInit:cell];
+        [self.sensorSmallSizeView cellInit:cell];
     }
     else {
         
@@ -61,16 +61,16 @@
 // ---------------------- Cell 大小 ------------------------
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"ReSizeCollectionView");
-    return CGSizeMake(sensorMiddleSizeViewSetting.Cell_Width, sensorMiddleSizeViewSetting.Cell_Height);
+    return CGSizeMake(sensorSmallSizeViewSetting.Cell_Width, sensorSmallSizeViewSetting.Cell_Height);
 }
 // ---------------------- 上下 cell 的間距 ------------------------
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return sensorMiddleSizeViewSetting.CollectionView_Vertical_Distance - 1;
+    return sensorSmallSizeViewSetting.CollectionView_Vertical_Distance - 1;
 }
 
 // ---------------------- 左右 cell 的間距 ------------------------
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return sensorMiddleSizeViewSetting.CollectionView_Horizental_Distance - 1;
+    return sensorSmallSizeViewSetting.CollectionView_Horizental_Distance - 1;
 }
 
 // ---------------------- 上左下右距離邊界距離 ------------------------

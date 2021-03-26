@@ -12,6 +12,8 @@
 #import "TitleBarViewController.h"
 #import "SensorLargeSizeViewController.h"
 #import "SensorMiddleSizeViewController.h"
+#import "SensorSmallSizeViewController.h"
+#import "RegisterViewController.h"
 #import <math.h>
 #import <Masonry.h>
 
@@ -21,6 +23,8 @@
 @property (strong, nonatomic) TitleBarViewController *titleBarViewController;
 @property (strong, nonatomic) SensorLargeSizeViewController *sensorLargeSizeViewController;
 @property (strong, nonatomic) SensorMiddleSizeViewController *sensorMiddleSizeViewController;
+@property (strong, nonatomic) SensorSmallSizeViewController *sensorSmallSizeViewController;
+@property (strong, nonatomic) RegisterViewController *registerViewController;
 @end
 
 @implementation ViewController
@@ -54,7 +58,7 @@
     }];
 
     [self.titleBarViewController initView];
-    //--
+    //-- Large size collectionview
 //    self.sensorLargeSizeViewController = [[SensorLargeSizeViewController alloc] init];
 //    [self.sensorLargeSizeViewController.view setAutoresizingMask:UIViewAutoresizingNone];
 //    [self.sensorLargeSizeViewController.view setUserInteractionEnabled:YES];
@@ -74,7 +78,7 @@
 //
 //    [self.sensorLargeSizeViewController initView];
 
-    //--
+    //-- Middle size collectionview
     self.sensorMiddleSizeViewController = [[SensorMiddleSizeViewController alloc] init];
     [self.sensorMiddleSizeViewController.view setAutoresizingMask:UIViewAutoresizingNone];
     [self.sensorMiddleSizeViewController.view setUserInteractionEnabled:YES];
@@ -91,8 +95,44 @@
         make.left.equalTo(self.view.mas_left);
         make.right.equalTo(self.view.mas_right);
     }];
+//    [self.sensorMiddleSizeViewController initView];
     
-    [self.sensorMiddleSizeViewController initView];
+    //-- Small size collectionview
+    self.sensorSmallSizeViewController = [[SensorSmallSizeViewController alloc] init];
+    [self.sensorSmallSizeViewController.view setAutoresizingMask:UIViewAutoresizingNone];
+    [self.sensorSmallSizeViewController.view setUserInteractionEnabled:YES];
+    [self addChildViewController:self.sensorSmallSizeViewController];
+    
+    [self.view addSubview:self.sensorSmallSizeViewController.view];
+    [self.sensorSmallSizeViewController didMoveToParentViewController:self];
+    
+    [self.sensorSmallSizeViewController.view setHidden:NO];
+    
+    [self.sensorSmallSizeViewController.view mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(self.view.mas_height).multipliedBy(0.82);
+        make.bottom.equalTo(self.view.mas_bottom);
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+    }];
+//    [self.sensorSmallSizeViewController initView];
+    //-- Register View
+    self.registerViewController = [[RegisterViewController alloc] init];
+    [self.registerViewController.view setAutoresizingMask:UIViewAutoresizingNone];
+    [self.registerViewController.view setUserInteractionEnabled:YES];
+    [self addChildViewController:self.registerViewController];
+    
+    [self.view addSubview:self.registerViewController.view];
+    [self.registerViewController didMoveToParentViewController:self];
+    
+    [self.registerViewController.view setHidden:NO];
+    
+    [self.registerViewController.view mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(self.view.mas_height).multipliedBy(0.82);
+        make.bottom.equalTo(self.view.mas_bottom);
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+    }];
+    [self.registerViewController initView];
 }
 
 
