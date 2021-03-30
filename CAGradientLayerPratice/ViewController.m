@@ -8,8 +8,9 @@
 #import "ViewController.h"
 #import "LogInView.h"
 #import "LoadingView.h"
-#import "BackgroundView.h"
+#import "GradientBackgroundView.h"
 #import "TitleBarViewController.h"
+#import "MainViewBackgroundViewController.h"
 #import "SensorLargeSizeViewController.h"
 #import "SensorMiddleSizeViewController.h"
 #import "SensorSmallSizeViewController.h"
@@ -21,6 +22,7 @@
 
 @property (strong, nonatomic) CAGradientLayer *GradientTestLayer;
 @property (strong, nonatomic) TitleBarViewController *titleBarViewController;
+@property (strong, nonatomic) MainViewBackgroundViewController *mainViewBackgroundViewController;
 @property (strong, nonatomic) SensorLargeSizeViewController *sensorLargeSizeViewController;
 @property (strong, nonatomic) SensorMiddleSizeViewController *sensorMiddleSizeViewController;
 @property (strong, nonatomic) SensorSmallSizeViewController *sensorSmallSizeViewController;
@@ -32,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    BackgroundView *backgroundView = [BackgroundView alloc];
+    GradientBackgroundView *backgroundView = [GradientBackgroundView alloc];
     [backgroundView entranceMethod:self.view];
 //    LogInView *logInView = [LogInView alloc];
 //    [logInView entranceMethod:self.view];
@@ -58,6 +60,27 @@
     }];
 
     [self.titleBarViewController initView];
+    //-- Main View Background View
+        self.mainViewBackgroundViewController = [[MainViewBackgroundViewController alloc] init];
+        [self.mainViewBackgroundViewController.view setAutoresizingMask:UIViewAutoresizingNone];
+        [self.mainViewBackgroundViewController.view setUserInteractionEnabled:YES];
+        [self addChildViewController:self.mainViewBackgroundViewController];
+    
+        [self.view addSubview:self.mainViewBackgroundViewController.view];
+        [self.mainViewBackgroundViewController didMoveToParentViewController:self];
+    
+        [self.mainViewBackgroundViewController.view setHidden:NO];
+    
+        [self.mainViewBackgroundViewController.view mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.equalTo(self.view.mas_height).multipliedBy(0.82);
+            make.bottom.equalTo(self.view.mas_bottom);
+            make.left.equalTo(self.view.mas_left);
+            make.right.equalTo(self.view.mas_right);
+        }];
+    
+        [self.mainViewBackgroundViewController initView];
+    
+    
     //-- Large size collectionview
 //    self.sensorLargeSizeViewController = [[SensorLargeSizeViewController alloc] init];
 //    [self.sensorLargeSizeViewController.view setAutoresizingMask:UIViewAutoresizingNone];

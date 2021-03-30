@@ -10,7 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TitleBarViewSetting : NSObject
-
+typedef NS_ENUM(NSInteger, ButtonViewEnum) {
+    LeftButtonIndex = 0,
+    RightButtonIndex = 1
+};
 @end
 
 NS_ASSUME_NONNULL_END

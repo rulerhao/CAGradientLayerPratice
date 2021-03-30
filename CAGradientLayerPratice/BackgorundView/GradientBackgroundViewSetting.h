@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BackgroundViewSetting : NSObject
+@interface GradientBackgroundViewSetting : NSObject
 
 //--------------------- Background Gradient Layer -----------------------
 @property (strong, nonatomic) NSArray *Log_In_Background_Gradient_Layer_Color;

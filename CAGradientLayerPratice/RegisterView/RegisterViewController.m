@@ -29,4 +29,5 @@
     self.registerView.delegate = self;
     [self.registerView entranceMethod:self.view];
 }
+
 @end

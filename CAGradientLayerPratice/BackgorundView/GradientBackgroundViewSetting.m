@@ -5,9 +5,9 @@
 //  Created by louie on 2021/3/22.
 //
 
-#import "BackgroundViewSetting.h"
+#import "GradientBackgroundViewSetting.h"
 
-@implementation BackgroundViewSetting
+@implementation GradientBackgroundViewSetting
 - (instancetype) init
 {
     self = [super init];

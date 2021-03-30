@@ -6,7 +6,7 @@
 //
 
 #import "SensorLargeSizeViewController.h"
-#import "BackgroundView.h"
+#import "GradientBackgroundView.h"
 
 @interface SensorLargeSizeViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 

@@ -46,14 +46,14 @@
     else {
         
     }
-    UIView *Background_View = [cell viewWithTag:1];
-    UILabel *Bed_Nubmer_Label = [cell viewWithTag:2];
-    UIImageView *Breath_Status_ImageView = [cell viewWithTag:3];
-    UILabel *Temperature_Label = [cell viewWithTag:4];
-    UIImageView *Battery_Volume_ImageView = [cell viewWithTag:5];
-    UIImageView *Baby_Photo_ImageView = [cell viewWithTag:6];
-    UIView *Baby_Photo_Mask_View = [cell viewWithTag:7];
-    UILabel *Name_Label = [cell viewWithTag:8];
+    UIView *Background_View = [cell viewWithTag:BackgroundViewTag];
+    UILabel *Bed_Nubmer_Label = [cell viewWithTag:BedNumberLabelTag];
+    UIImageView *Breath_Status_ImageView = [cell viewWithTag:BreathStatusImageViewTag];
+    UILabel *Temperature_Label = [cell viewWithTag:TemperatureLabelTag];
+    UIImageView *Battery_Volume_ImageView = [cell viewWithTag:BatteryVolumeImageViewTag];
+    UIImageView *Baby_Photo_ImageView = [cell viewWithTag:BabyPhotoImageViewTag];
+    UIView *Baby_Photo_Mask_View = [cell viewWithTag:BabyPhotoMaskViewTag];
+    UILabel *Name_Label = [cell viewWithTag:NameLabelTag];
     
     return cell;
 }

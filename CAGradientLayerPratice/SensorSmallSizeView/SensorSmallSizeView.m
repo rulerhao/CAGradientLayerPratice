@@ -93,8 +93,8 @@
 
 // --------- Constraints for collectionView  cell -------------
 - (void) cellConstraints : (UICollectionViewCell *) Cell {
-    UIView *Background_View = [Cell viewWithTag:1];
-    UILabel *Bed_Nubmer_Label = [Cell viewWithTag:2];
+    UIView *Background_View = [Cell viewWithTag:BackgroundViewTag];
+    UILabel *Bed_Nubmer_Label = [Cell viewWithTag:BedNumberLabelTag];
     
     //--------------------- Background View -----------------------
     [Background_View mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -115,8 +115,8 @@
 
 // ------------- Draw for CALayer or CAShapeLayer ------------
 - (void) cellWriteLayers : (UICollectionViewCell *) Cell {
-    UIView *Background_View = [Cell viewWithTag:1];
-    UILabel *Bed_Nubmer_Label = [Cell viewWithTag:2];
+    UIView *Background_View = [Cell viewWithTag:BackgroundViewTag];
+    UILabel *Bed_Number_Label = [Cell viewWithTag:BedNumberLabelTag];
     
     //--------------------- Background View -----------------------
     CAShapeLayer *Card_Background_Shape_Layer = [[CAShapeLayer alloc] init];

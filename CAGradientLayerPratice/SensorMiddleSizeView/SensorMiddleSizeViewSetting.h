@@ -12,6 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SensorMiddleSizeViewSetting : NSObject
 
+typedef NS_ENUM(NSInteger, CollectionViewCellViewEnum) {
+    ViewHaveNotThing = -1,
+    BackgroundViewTag = 1,
+    BedNumberLabelTag = 2,
+    BreathStatusImageViewTag = 3,
+    TemperatureLabelTag = 4,
+    BatteryVolumeImageViewTag = 5,
+    BabyPhotoImageViewTag = 6,
+    BabyPhotoMaskViewTag = 7,
+    NameLabelTag = 8
+};
+
 @property (assign, nonatomic) float CollectionView_Width_Ratio;
 
 @property (assign, nonatomic) float CollectionView_Vertical_Distance;

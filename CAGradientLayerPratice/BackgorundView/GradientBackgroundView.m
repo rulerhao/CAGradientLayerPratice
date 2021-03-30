@@ -5,12 +5,12 @@
 //  Created by louie on 2021/3/22.
 //
 
-#import "BackgroundView.h"
-#import "BackgroundViewSetting.h"
+#import "GradientBackgroundView.h"
+#import "GradientBackgroundViewSetting.h"
 #import <Masonry.h>
-@interface BackgroundView ()
+@interface GradientBackgroundView ()
 {
-    BackgroundViewSetting *backgroundViewSetting;
+    GradientBackgroundViewSetting *backgroundViewSetting;
 }
 @property (strong, nonatomic) UIView *Content_View;
 
@@ -20,13 +20,13 @@
 
 @end
 
-@implementation BackgroundView
+@implementation GradientBackgroundView
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        backgroundViewSetting = [[BackgroundViewSetting alloc] init];
+        backgroundViewSetting = [[GradientBackgroundViewSetting alloc] init];
         
         [self viewInit];
         
@@ -40,7 +40,7 @@
 - (void) entranceMethod : (UIView *) Content_View {
     self.Content_View = Content_View;
     
-    backgroundViewSetting = [[BackgroundViewSetting alloc] init];
+    backgroundViewSetting = [[GradientBackgroundViewSetting alloc] init];
     
     [self viewInit];
     

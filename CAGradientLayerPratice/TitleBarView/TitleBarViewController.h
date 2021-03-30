@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TitleBarView.h"
+#import "TitleBarViewSetting.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TitleBarViewController : UIViewController <TitleBarViewDelegate>

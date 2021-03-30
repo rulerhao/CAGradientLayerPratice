@@ -19,7 +19,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface RegisterView : UIView
+typedef NS_ENUM(NSInteger, CollectionViewCellViewEnum) {
+    DeviceOthers = -1,
+    DeviceNotYetConnect = 1,
+    DeviceConnectMoreThanOne = 2,
+    DeviceConnectExactlyOne = 3,
+};
+
 @property (strong, nonatomic) id <RegisterViewDelegate> delegate;
+
+@property (assign, nonatomic) float DevicesStatus;
 
 
 - (void) entranceMethod : (UIView *) Content_View;

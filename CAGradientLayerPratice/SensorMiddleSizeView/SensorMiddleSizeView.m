@@ -140,15 +140,15 @@
 // --------- Constraints for collectionView  cell -------------
 - (void) cellConstraints : (UICollectionViewCell *) Cell {
 //    Cell.backgroundColor = [UIColor blueColor];
-    UIView *Background_View = [UIView alloc];
-    Background_View = [Cell viewWithTag:1];
-    UILabel *Bed_Nubmer_Label = [Cell viewWithTag:2];
-    UIImageView *Breath_Status_ImageView = [Cell viewWithTag:3];
-    UILabel *Temperature_Label = [Cell viewWithTag:4];
-    UIImageView *Battery_Volume_ImageView = [Cell viewWithTag:5];
-    UIImageView *Baby_Photo_ImageView = [Cell viewWithTag:6];
-    UIView *Baby_Photo_Mask_View = [Cell viewWithTag:7];
-    UILabel *Name_Label = [Cell viewWithTag:8];
+//    UIView *Background_View = [UIView alloc];
+    UIView *Background_View = [Cell viewWithTag:BackgroundViewTag];
+    UILabel *Bed_Nubmer_Label = [Cell viewWithTag:BedNumberLabelTag];
+    UIImageView *Breath_Status_ImageView = [Cell viewWithTag:BreathStatusImageViewTag];
+    UILabel *Temperature_Label = [Cell viewWithTag:TemperatureLabelTag];
+    UIImageView *Battery_Volume_ImageView = [Cell viewWithTag:BatteryVolumeImageViewTag];
+    UIImageView *Baby_Photo_ImageView = [Cell viewWithTag:BabyPhotoImageViewTag];
+    UIView *Baby_Photo_Mask_View = [Cell viewWithTag:BabyPhotoMaskViewTag];
+    UILabel *Name_Label = [Cell viewWithTag:NameLabelTag];
     
     //--------------------- Background View -----------------------
     NSLog(@"self.ContentView = %@", self.Content_View);
@@ -208,14 +208,14 @@
 
 // ------------- Draw for CALayer or CAShapeLayer ------------
 - (void) cellWriteLayers : (UICollectionViewCell *) Cell {
-    UIView *Background_View = [Cell viewWithTag:1];
-    UILabel *Bed_Nubmer_Label = [Cell viewWithTag:2];
-    UIImageView *Breath_Status_ImageView = [Cell viewWithTag:3];
-    UILabel *Temperature_Label = [Cell viewWithTag:4];
-    UIImageView *Battery_Volume_ImageView = [Cell viewWithTag:5];
-    UIImageView *Baby_Photo_ImageView = [Cell viewWithTag:6];
-    UIView *Baby_Photo_Mask_View = [Cell viewWithTag:7];
-    UILabel *Name_Label = [Cell viewWithTag:8];
+    UIView *Background_View = [Cell viewWithTag:BackgroundViewTag];
+    UILabel *Bed_Nubmer_Label = [Cell viewWithTag:BedNumberLabelTag];
+    UIImageView *Breath_Status_ImageView = [Cell viewWithTag:BreathStatusImageViewTag];
+    UILabel *Temperature_Label = [Cell viewWithTag:TemperatureLabelTag];
+    UIImageView *Battery_Volume_ImageView = [Cell viewWithTag:BatteryVolumeImageViewTag];
+    UIImageView *Baby_Photo_ImageView = [Cell viewWithTag:BabyPhotoImageViewTag];
+    UIView *Baby_Photo_Mask_View = [Cell viewWithTag:BabyPhotoMaskViewTag];
+    UILabel *Name_Label = [Cell viewWithTag:NameLabelTag];
     
     //--------------------- Background View -----------------------
     CAShapeLayer *Card_Background_Shape_Layer = [[CAShapeLayer alloc] init];

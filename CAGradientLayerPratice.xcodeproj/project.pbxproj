@@ -14,6 +14,9 @@
 		632935F1260DE0B700152E94 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 632935F0260DE0B700152E94 /* RegisterView.m */; };
 		632935F6260DE0C900152E94 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632935F5260DE0C900152E94 /* RegisterViewController.m */; };
 		632935FA260DE0DD00152E94 /* RegisterViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 632935F9260DE0DD00152E94 /* RegisterViewSetting.m */; };
+		63356F9D26116AAF00F58A00 /* MainViewBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63356F9C26116AAF00F58A00 /* MainViewBackgroundView.m */; };
+		63356FA226116AC600F58A00 /* MainViewBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63356FA126116AC600F58A00 /* MainViewBackgroundViewController.m */; };
+		63356FA626116AE900F58A00 /* MainViewBackgroundViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 63356FA526116AE900F58A00 /* MainViewBackgroundViewSetting.m */; };
 		633F6DC1260978E800BA7FE0 /* TitleBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DC0260978E800BA7FE0 /* TitleBarViewController.m */; };
 		633F6DC52609791700BA7FE0 /* TitleBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DC42609791700BA7FE0 /* TitleBarModel.m */; };
 		633F6DC9260979D300BA7FE0 /* TitleBarViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F6DC8260979D300BA7FE0 /* TitleBarViewSetting.m */; };
@@ -56,8 +59,8 @@
 		637CF24E26049507005F0254 /* MUL OUcare-16 形象頁down.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CF24C26049507005F0254 /* MUL OUcare-16 形象頁down.png */; };
 		6387352826084D3E00CC643C /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387352726084D3E00CC643C /* LoadingView.m */; };
 		6387352C26084D5300CC643C /* LoadingViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387352B26084D5300CC643C /* LoadingViewSetting.m */; };
-		638735372608A37000CC643C /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638735362608A37000CC643C /* BackgroundView.m */; };
-		6387353C2608A45E00CC643C /* BackgroundViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387353B2608A45E00CC643C /* BackgroundViewSetting.m */; };
+		638735372608A37000CC643C /* GradientBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638735362608A37000CC643C /* GradientBackgroundView.m */; };
+		6387353C2608A45E00CC643C /* GradientBackgroundViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387353B2608A45E00CC643C /* GradientBackgroundViewSetting.m */; };
 		638735402608A71D00CC643C /* SensorLargeSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387353F2608A71D00CC643C /* SensorLargeSizeView.m */; };
 		638735452608A76400CC643C /* TitleBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638735442608A76400CC643C /* TitleBarView.m */; };
 /* End PBXBuildFile section */
@@ -75,6 +78,12 @@
 		632935F5260DE0C900152E94 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		632935F8260DE0DD00152E94 /* RegisterViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewSetting.h; sourceTree = "<group>"; };
 		632935F9260DE0DD00152E94 /* RegisterViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewSetting.m; sourceTree = "<group>"; };
+		63356F9B26116AAF00F58A00 /* MainViewBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewBackgroundView.h; sourceTree = "<group>"; };
+		63356F9C26116AAF00F58A00 /* MainViewBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewBackgroundView.m; sourceTree = "<group>"; };
+		63356FA026116AC600F58A00 /* MainViewBackgroundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewBackgroundViewController.h; sourceTree = "<group>"; };
+		63356FA126116AC600F58A00 /* MainViewBackgroundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewBackgroundViewController.m; sourceTree = "<group>"; };
+		63356FA426116AE900F58A00 /* MainViewBackgroundViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewBackgroundViewSetting.h; sourceTree = "<group>"; };
+		63356FA526116AE900F58A00 /* MainViewBackgroundViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewBackgroundViewSetting.m; sourceTree = "<group>"; };
 		633F6DBF260978E800BA7FE0 /* TitleBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleBarViewController.h; sourceTree = "<group>"; };
 		633F6DC0260978E800BA7FE0 /* TitleBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleBarViewController.m; sourceTree = "<group>"; };
 		633F6DC32609791700BA7FE0 /* TitleBarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleBarModel.h; sourceTree = "<group>"; };
@@ -134,10 +143,10 @@
 		6387352726084D3E00CC643C /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		6387352A26084D5300CC643C /* LoadingViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewSetting.h; sourceTree = "<group>"; };
 		6387352B26084D5300CC643C /* LoadingViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewSetting.m; sourceTree = "<group>"; };
-		638735352608A37000CC643C /* BackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
-		638735362608A37000CC643C /* BackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
-		6387353A2608A45E00CC643C /* BackgroundViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundViewSetting.h; sourceTree = "<group>"; };
-		6387353B2608A45E00CC643C /* BackgroundViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundViewSetting.m; sourceTree = "<group>"; };
+		638735352608A37000CC643C /* GradientBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientBackgroundView.h; sourceTree = "<group>"; };
+		638735362608A37000CC643C /* GradientBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientBackgroundView.m; sourceTree = "<group>"; };
+		6387353A2608A45E00CC643C /* GradientBackgroundViewSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientBackgroundViewSetting.h; sourceTree = "<group>"; };
+		6387353B2608A45E00CC643C /* GradientBackgroundViewSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientBackgroundViewSetting.m; sourceTree = "<group>"; };
 		6387353E2608A71D00CC643C /* SensorLargeSizeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorLargeSizeView.h; sourceTree = "<group>"; };
 		6387353F2608A71D00CC643C /* SensorLargeSizeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorLargeSizeView.m; sourceTree = "<group>"; };
 		638735432608A76400CC643C /* TitleBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleBarView.h; sourceTree = "<group>"; };
@@ -179,6 +188,19 @@
 				632935F9260DE0DD00152E94 /* RegisterViewSetting.m */,
 			);
 			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		63356F9A26116A7A00F58A00 /* MainViewBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				63356F9B26116AAF00F58A00 /* MainViewBackgroundView.h */,
+				63356F9C26116AAF00F58A00 /* MainViewBackgroundView.m */,
+				63356FA026116AC600F58A00 /* MainViewBackgroundViewController.h */,
+				63356FA126116AC600F58A00 /* MainViewBackgroundViewController.m */,
+				63356FA426116AE900F58A00 /* MainViewBackgroundViewSetting.h */,
+				63356FA526116AE900F58A00 /* MainViewBackgroundViewSetting.m */,
+			);
+			path = MainViewBackgroundView;
 			sourceTree = "<group>";
 		};
 		633F6DCF2609E3FF00BA7FE0 /* SensorView */ = {
@@ -223,6 +245,7 @@
 		637CF1F5260438BB005F0254 /* CAGradientLayerPratice */ = {
 			isa = PBXGroup;
 			children = (
+				63356F9A26116A7A00F58A00 /* MainViewBackgroundView */,
 				632935EE260DE0A500152E94 /* RegisterView */,
 				638735422608A75300CC643C /* TitleBarView */,
 				638735342608A31900CC643C /* BackgorundView */,
@@ -338,10 +361,10 @@
 		638735342608A31900CC643C /* BackgorundView */ = {
 			isa = PBXGroup;
 			children = (
-				638735352608A37000CC643C /* BackgroundView.h */,
-				638735362608A37000CC643C /* BackgroundView.m */,
-				6387353A2608A45E00CC643C /* BackgroundViewSetting.h */,
-				6387353B2608A45E00CC643C /* BackgroundViewSetting.m */,
+				638735352608A37000CC643C /* GradientBackgroundView.h */,
+				638735362608A37000CC643C /* GradientBackgroundView.m */,
+				6387353A2608A45E00CC643C /* GradientBackgroundViewSetting.h */,
+				6387353B2608A45E00CC643C /* GradientBackgroundViewSetting.m */,
 			);
 			path = BackgorundView;
 			sourceTree = "<group>";
@@ -515,22 +538,25 @@
 				63482CF5260C7B310056905B /* SensorMiddleSizeViewController.m in Sources */,
 				638735452608A76400CC643C /* TitleBarView.m in Sources */,
 				632935E4260DD30900152E94 /* SensorSmallSizeView.m in Sources */,
+				63356F9D26116AAF00F58A00 /* MainViewBackgroundView.m in Sources */,
 				637CF23A260448F2005F0254 /* LogInView.m in Sources */,
 				637CF245260453AE005F0254 /* LoginViewSetting.m in Sources */,
-				6387353C2608A45E00CC643C /* BackgroundViewSetting.m in Sources */,
+				6387353C2608A45E00CC643C /* GradientBackgroundViewSetting.m in Sources */,
 				63482CF1260C7B1B0056905B /* SensorMiddleSizeView.m in Sources */,
 				633F6DCD2609CBD600BA7FE0 /* SensorLargeSizeViewController.m in Sources */,
 				63482CF9260C7B4C0056905B /* SensorMiddleSizeViewSetting.m in Sources */,
 				632935F6260DE0C900152E94 /* RegisterViewController.m in Sources */,
 				633F6DC9260979D300BA7FE0 /* TitleBarViewSetting.m in Sources */,
-				638735372608A37000CC643C /* BackgroundView.m in Sources */,
+				638735372608A37000CC643C /* GradientBackgroundView.m in Sources */,
 				632935F1260DE0B700152E94 /* RegisterView.m in Sources */,
 				638735402608A71D00CC643C /* SensorLargeSizeView.m in Sources */,
 				632935EC260DD33000152E94 /* SensorSmallSizeViewSetting.m in Sources */,
 				637CF209260438BD005F0254 /* main.m in Sources */,
+				63356FA226116AC600F58A00 /* MainViewBackgroundViewController.m in Sources */,
 				632935E8260DD31B00152E94 /* SensorSmallSizeViewController.m in Sources */,
 				6387352C26084D5300CC643C /* LoadingViewSetting.m in Sources */,
 				637CF1FB260438BB005F0254 /* SceneDelegate.m in Sources */,
+				63356FA626116AE900F58A00 /* MainViewBackgroundViewSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,16 +1,15 @@
 //
-//  BackgroundView.h
+//  MainViewBackgroundView.h
 //  CAGradientLayerPratice
 //
-//  Created by louie on 2021/3/22.
+//  Created by louie on 2021/3/29.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BackgroundView : UIView
-
+@interface MainViewBackgroundView : UIView
 - (void) entranceMethod : (UIView *) Content_View;
 
 @end

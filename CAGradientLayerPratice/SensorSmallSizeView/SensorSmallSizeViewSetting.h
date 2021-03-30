@@ -11,6 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SensorSmallSizeViewSetting : NSObject
+
+typedef NS_ENUM(NSInteger, CollectionViewCellViewEnum) {
+    ViewHaveNotThing = -1,
+    BackgroundViewTag = 1,
+    BedNumberLabelTag = 2
+};
+
 @property (assign, nonatomic) float CollectionView_Width_Ratio;
 
 @property (assign, nonatomic) float CollectionView_Vertical_Distance;
